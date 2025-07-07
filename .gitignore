@@ -1,0 +1,147 @@
+# PNG Police Cyber Crime Monitoring System
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing
+/coverage
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Next.js
+/.next/
+/out/
+
+# Production builds
+/build
+/dist
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment files - NEVER COMMIT SECRETS
+.env*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+production.env
+
+# Uploads and sensitive files
+/uploads/
+/tmp/
+/temp/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Security and certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+keys/
+
+# Debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Prisma
+/src/generated/prisma
+/prisma/migrations/**/migration.sql
+
+# Deployment
+.vercel
+.netlify
+.firebase/
+
+# Documentation builds
+/docs/build/
+
+# Temporary files
+.tmp/
+.cache/
+.parcel-cache/
+
+# Package manager lock files (keep only one)
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+# Keep bun.lock for this project
+
+# Monitoring and analytics
+.nyc_output
+coverage/
+*.lcov
+
+# Local development
+.local/
+local.env
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Law enforcement specific - NEVER COMMIT
+case-files/
+evidence/
+investigations/
+suspects/
+victims/
+real-data/
+production-data/
+sensitive/
